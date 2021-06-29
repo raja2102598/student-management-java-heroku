@@ -30,6 +30,12 @@ public class StudentController {
 	@Autowired
 	StudentService service;
 
+
+	@GetMapping("/")
+	public String homePage(){
+		return "hello";
+	}
+
 	/*
 	 * method for inserting student data
 	 * 
